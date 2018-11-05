@@ -1,0 +1,16 @@
+{
+  "name": "grpc-web-todo-sample",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/yami-beta/grpc-web-todo-sample",
+  "author": "yami-beta <yami-beta@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "grpc": "^1.16.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
+}
