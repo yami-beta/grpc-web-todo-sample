@@ -1,7 +1,9 @@
-const grpc = require("grpc");
-const protoLoader = require("@grpc/proto-loader");
-const PROTO_PATH = __dirname + "/todo.proto";
-const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
+import * as path from "path";
+import * as grpc from "grpc";
+import { loadSync } from "@grpc/proto-loader";
+
+const PROTO_PATH = path.join(__dirname, "..", "todo.proto");
+const packageDefinition = loadSync(PROTO_PATH, {
   keepCase: true,
   longs: String,
   enums: String,
